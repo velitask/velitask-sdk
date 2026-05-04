@@ -1,12 +1,14 @@
 # JitPack configuration for velitask-sdk
 #
-# velitask-sdk is not built from sources by JitPack — pre-built fat-jar is
-# attached to GitHub Releases as assets. This file tells JitPack how to fetch it.
+# velitask-sdk is not built from sources by JitPack — pre-built artifacts
+# are attached to GitHub Releases as assets. This file tells JitPack
+# how to fetch them.
 #
 # Workflow:
 #   1. JitPack receives request for com.github.velitask:velitask-sdk:X.Y.Z
 #   2. Clones this repo at tag X.Y.Z
-#   3. Runs install: below — downloads JAR + sources from the Release, installs to ~/.m2
+#   3. Runs install: below — downloads main JAR + sources + javadoc from
+#      the Release, installs them as a Maven artifact in ~/.m2
 #   4. Serves to the requesting client
 
 jdk:
@@ -17,9 +19,12 @@ install:
       "https://github.com/velitask/velitask-sdk/releases/download/$VERSION/velitask-sdk-${VERSION}.jar"
   - curl -fSL -o velitask-sdk-sources.jar
       "https://github.com/velitask/velitask-sdk/releases/download/$VERSION/velitask-sdk-${VERSION}-sources.jar"
+  - curl -fSL -o velitask-sdk-javadoc.jar
+      "https://github.com/velitask/velitask-sdk/releases/download/$VERSION/velitask-sdk-${VERSION}-javadoc.jar"
   - mvn install:install-file
       -Dfile=velitask-sdk.jar
       -Dsources=velitask-sdk-sources.jar
+      -Djavadoc=velitask-sdk-javadoc.jar
       -DgroupId=com.github.velitask
       -DartifactId=velitask-sdk
       -Dversion=$VERSION
