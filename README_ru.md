@@ -19,7 +19,7 @@ dependencies {
 }
 ```
 
-Для конкретной версии замените `1.0.+` на тег (например, `v1.0.43-beta`). Список всех версий — на странице [Releases](https://github.com/velitask/velitask-sdk/releases).
+Для конкретной версии замените `1.0.+` на тег (например, `1.0.44-beta`). Список всех версий — на странице [Releases](https://github.com/velitask/velitask-sdk/releases).
 
 ## Быстрый старт
 

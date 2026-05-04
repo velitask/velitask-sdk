@@ -19,7 +19,7 @@ dependencies {
 }
 ```
 
-For a specific version, replace `1.0.+` with a tag (e.g. `v1.0.43-beta`). All available versions are listed on the [Releases page](https://github.com/velitask/velitask-sdk/releases).
+For a specific version, replace `1.0.+` with a tag (e.g. `1.0.44-beta`). All available versions are listed on the [Releases page](https://github.com/velitask/velitask-sdk/releases).
 
 ## Quick start
 
