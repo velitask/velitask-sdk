@@ -1,0 +1,22 @@
+# Binary artifacts — published via GitHub Releases assets, not committed
+*.jar
+*.proguard-map
+
+# Java / Gradle build output (in case of local testing)
+build/
+.gradle/
+out/
+bin/
+target/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
