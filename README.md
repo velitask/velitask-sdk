@@ -63,3 +63,7 @@ The Apache License 2.0 covers the **public API** of this SDK (the `com.velitask.
 - Bug reports and feature requests: [GitHub Issues](https://github.com/velitask/velitask-sdk/issues).
 - Pull requests are welcome for documentation, examples, and SDK improvements.
 - The SDK source itself is maintained in a private repository; the binary releases are mirrored here.
+
+---
+
+© 2026 Velitask
