@@ -2,7 +2,7 @@
 
 [Русский](README_ru.md)
 
-Public SDK for developing plugins for [Velitask](https://velitask.com) — the video & telemetry synchronization tool. Build custom indicators, figures, and data sources for Velitask using Java 21 and JavaFX.
+Public SDK for developing plugins for [Velitask Telemetry Video Editor](https://velitask.com) (TVE) — a telemetry video editor that synchronizes video and telemetry. Build custom indicators, figures, and data sources for Velitask applications using Java 21 and JavaFX.
 
 ## Add to your plugin project
 
@@ -15,11 +15,14 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'com.github.velitask:velitask-sdk:1.0.+'
+    compileOnly 'com.github.velitask:velitask-sdk:1.1.+'
+    compileOnly 'org.json:json:20250107'
 }
 ```
 
-For a specific version, replace `1.0.+` with a tag (e.g. `1.0.44-beta`). All available versions are listed on the [Releases page](https://github.com/velitask/velitask-sdk/releases).
+The SDK contains everything that only Velitask has. The third-party `org.json` library (its `JSONObject` class appears in the SDK API) is added as a regular dependency from Maven Central.
+
+For a specific version, replace `1.1.+` with a tag (e.g. `1.1.131-beta`). All available versions are listed on the [Releases page](https://github.com/velitask/velitask-sdk/releases).
 
 ## Quick start
 

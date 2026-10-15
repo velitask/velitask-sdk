@@ -2,7 +2,7 @@
 
 [English](README.md)
 
-Публичный SDK для разработки плагинов к [Velitask](https://velitask.com) — инструменту синхронизации видео и телеметрии. Создавайте собственные индикаторы, фигуры и источники данных для Velitask на Java 21 и JavaFX.
+Публичный SDK для разработки плагинов к [Телеметрическому видеоредактору Velitask](https://velitask.com) (TVE) — видеоредактору, который синхронизирует видео и телеметрию. Создавайте собственные индикаторы, фигуры и источники данных для приложений Velitask на Java 21 и JavaFX.
 
 ## Подключение к проекту плагина
 
@@ -15,11 +15,14 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'com.github.velitask:velitask-sdk:1.0.+'
+    compileOnly 'com.github.velitask:velitask-sdk:1.1.+'
+    compileOnly 'org.json:json:20250107'
 }
 ```
 
-Для конкретной версии замените `1.0.+` на тег (например, `1.0.44-beta`). Список всех версий — на странице [Releases](https://github.com/velitask/velitask-sdk/releases).
+SDK содержит всё, что есть только у Velitask. Сторонняя библиотека `org.json` (её класс `JSONObject` встречается в API SDK) подключается обычной зависимостью из Maven Central.
+
+Для конкретной версии замените `1.1.+` на тег (например, `1.1.131-beta`). Список всех версий — на странице [Releases](https://github.com/velitask/velitask-sdk/releases).
 
 ## Быстрый старт
 
