@@ -34,7 +34,7 @@ cd plugin-example
 ./gradlew jar
 ```
 
-The resulting `build/libs/*.jar` can be placed in your Velitask plugins directory (`~/.velitask/plugins/`) and loaded by the application.
+The resulting `build/libs/*.jar` can be placed in your Velitask plugins directory (`~/.velitask/telemitri/plugins/`) and loaded by the application.
 
 ## Build a plugin from scratch
 
@@ -53,7 +53,7 @@ The resulting `build/libs/*.jar` can be placed in your Velitask plugins director
    }
    ```
 
-5. `./gradlew jar` and copy the result to `~/.velitask/plugins/`.
+5. `./gradlew jar` and copy the result to `~/.velitask/telemitri/plugins/`.
 
 ## License
 

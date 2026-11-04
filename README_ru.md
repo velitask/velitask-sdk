@@ -34,7 +34,7 @@ cd plugin-example
 ./gradlew jar
 ```
 
-Получившийся `build/libs/*.jar` положите в папку плагинов Velitask (`~/.velitask/plugins/`) — приложение его подхватит.
+Получившийся `build/libs/*.jar` положите в папку плагинов Velitask (`~/.velitask/telemitri/plugins/`) — приложение его подхватит.
 
 ## Создать плагин с нуля
 
@@ -53,7 +53,7 @@ cd plugin-example
    }
    ```
 
-5. Соберите `./gradlew jar` и скопируйте результат в `~/.velitask/plugins/`.
+5. Соберите `./gradlew jar` и скопируйте результат в `~/.velitask/telemitri/plugins/`.
 
 ## Лицензия
 
